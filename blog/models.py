@@ -13,3 +13,5 @@ class Post(models.Model):
     date_posted = models.DateTimeField(default=timezone.now)
     # tags = ArrayField(models.CharField(max_length=80, blank=True), size=3)
 
+    def __str__(self):
+        return self.title
